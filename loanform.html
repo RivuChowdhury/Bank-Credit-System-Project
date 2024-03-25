@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply For Loan</title>
+    <link rel="stylesheet" type="text/css" href="/style/loanstyle.css">
+    <link rel="stylesheet" type="text/css" href="loanstyle.css">
+     <div class="container1">
+     <header class="left header">
+      <div class="title-header">
+        <h1 id="title" class="text-center">Apply Loan</h1>
+        <p id="description" class="description text-center">Thanks for your application. We'll send you an email once we've processed it </p>
+      </div>
+    </header>  
+    
+    
+</head>
+<body>
+    <div id="loan-form">
+        <form action="" method="POST">
+
+            <div class="container">
+                <div>
+                    <label id="userId-lebel" for="uid"><b>UserID</b></label>
+                    <input type="number" placeholder="Enter UserID:" name="uid" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label id="username-label" for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                </div>
+
+
+                <br>
+               
+                <div>
+                   <label id="loantype-label" for="uloan"><b>Loan Type</b></label>
+                   <select name="uloan">
+                      <option value="Gold loan">Gold loan</option>
+                      <option value="Home loan">Home loan</option>
+                      <option value="Education loan">Eduction loan</option>
+                      <option value="Car loan">Car loan</option>
+                      <option value="Personal loan">Personal loan</option>
+                      <option value="Business loan">Business loan</option>
+                   </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label id="loanamount-label" for="uamount"><b>Loan amount(in Rs.)</b></label>
+                    <input type="number" placeholder="Enter loan amount" name="uamount" required>
+                </div>
+                
+                <br>
+
+                <div>
+                    <label id="time-label" for="utime"><b>Time period</b></label>
+                    <input type="number" placeholder="Enter time period" name="utime" required>
+                </div>                
+                
+                <br>
+
+                   
+                <div>
+                    <label for="uemail"><b>Email ID</b></label>
+                    <input type="text" placeholder="Enter email" name="uemail" required>
+                </div>
+
+                <br>
+
+                <div>   
+                    <label for="umobile"><b>Mobile Number</b></label>
+                    <input type="text" placeholder="Enter mobile number" name="umobile" required>
+                </div>
+
+                <br>
+
+                <div>
+                    Are you sure that you want to take the loan: <input type="checkbox" name="ucheck">
+                </div>
+
+                <br>
+
+                <div>
+                    <button type="submit">Confirm</button>
+                    <button type="reset">Cancel</button>
+                </div>
+
+                <br>
+            </div>
+        
+        </form>
+    </div>
+    
+</body>
+</html>

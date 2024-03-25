@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/x-icon" href="SNL2.ico">
+    <link rel="icon" type="/images/image/x-icon" href="SNL2.ico">
 <meta charset="utf-8">
   <meta http-equiv="refresh" content="60">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraksha Small Finance Bank</title>
-    <link rel="shortcut icon" href="logo.png.ico">
+    <link rel="shortcut icon" href="/images/logo.png.ico">
     <!-- for mobile -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
 
 <!-- for desktop   -->
-    <link rel="stylesheet" type="text/css" href="desktop.css" media="screen and (min-width:992px)">
+    <link rel="stylesheet" type="text/css" href="/style/desktop.css" media="screen and (min-width:992px)">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,21 +20,23 @@
 
     <div class="navbar">
         <div class="nav-logo col-2">
-            <img src="logo.png.png" width="60px" height="60px">
+            <img src="/images/logo.png.png" width="60px" height="60px">
             
         </div>
         <div class="nav-heading col-4">
-            <h1>Suraksha Small Finance Bank</h1>
+            
+          
+          <h1>Finance Bank</h1>
             
         </div>
         <div class="navbar-menu col-6">
-            <a href="#">Home</a>
+            <a href="https://rivuchowdhury.github.io/Risk_Ratio_Calculator/">Apply for loan</a>
             <a href="#">Open Account</a>
             <a href="#">Carrers</a>
             <a href="#scheme-id">Scheme</a>
             <a href="#about-us-id">About</a>
             <a href="#contact-id">Contact Us</a>
-
+            
             
         </div>
 
@@ -167,26 +169,27 @@
             </head>
             <body>
             
-            <h2>Net Banking</h2>
+            <script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.12/dist/nightowl.js"></script>
             
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:50%;">Login/Sign Up</button>
             
             <div id="id01" class="modal">
               
-              <form class="modal-content animate" action="/action_page.php" method="post">
+              <form class="modal-content animate" action="/search" method="get">
                 <div class="imgcontainer">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                  <img src="/images/img_avatar2.png" alt="Avatar" class="avatar">
                 </div>
             
                 <div class="container">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <label for="logname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="logname" required>
             
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <label for="logpsw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="logpsw" required>
                     
                   <button type="submit">Login</button>
+                  <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
                   <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
@@ -196,6 +199,42 @@
                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                   <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
+              </form>
+            </div>
+
+            <div id='id02' class="modal">
+              <form class="modal-content animate" action="" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="/images/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="uemail"><b>Email ID</b></label>
+                  <input type="text" placeholder="Enter email" name="uemail" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <label for="umobile"><b>Mobile Number</b></label>
+                  <input type="text" placeholder="Enter mobile number" name="umobile" required>
+                  
+                  <label for="ucar"><b>Account-Type</b></label>
+                  <select name="ucar">
+                    <option value="Savings">Savings</option>
+                    <option value="Current">Current</option>
+                  </select>
+                    
+                  <button type="submit">Sign Up</button>
+                  <!-- <button onclick="document.getElementById('id01').style.display='block'">Login</button> -->
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+          
               </form>
             </div>
             
@@ -209,6 +248,7 @@
                     modal.style.display = "none";
                 }
             }
+            
             </script>
             
 
@@ -223,40 +263,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <!--login-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
 
 
 
@@ -331,50 +338,51 @@
     </head>
     <body>
     
-    <h2>Welcome To Suraksha Small Finance Bank</h2>
+    <h2>Welcome To Finance Bank</h2>
+    
     
     
     <div class="slideshow-container">
     
     <div class="mySlides fade">
       <div class="numbertext">1 / 7</div>
-      <img src="card.png" style="width:100%">
+      <img src="/images/card.png" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">2 / 7</div>
-      <img src="cvv.jpg" style="width:100%">
+      <img src="/images/cvv.jpg" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">3 / 7</div>
-      <img src="home.png" style="width:100%">
+      <img src="/images/home.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">4 / 7</div>
-        <img src="car.webp" style="width:100%">
+        <img src="/images/car.webp" style="width:100%">
         <div class="text">Caption Four</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">5 / 7</div>
-        <img src="education.jpg" style="width:100%">
+        <img src="/images/education.jpg" style="width:100%">
         <div class="text">Caption Five</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">6 / 7</div>
-        <img src="business.avif" style="width:100%">
+        <img src="/images/business.avif" style="width:100%">
         <div class="text">Caption Six</div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext">7 / 7</div>
-        <img src="gold.jpg" style="width:100%">
+        <img src="/images/gold.jpg" style="width:100%">
         <div class="text">Caption Seven</div>
       </div>
     
@@ -439,7 +447,7 @@
             </div>
             <div class="col-6">
                 <div class="about-img-col-6">
-                    <img src="about.jpg" width="450px" height="250px"  alt="">
+                    <img src="/images/about.jpg" width="450px" height="250px"  alt="">
                 </div>
             </div>
         </div>
@@ -657,7 +665,7 @@
       <div class="row">
           <div class="col-4 fw600">
               <div class="service-col">
-                  <i> <img src=""></i>
+                  <i> <img src="/images/gold.jpg"></i>
                   <h4><a href="#">Gold Loan</a></h4>
                   <p>A savings account is an interest-bearing deposit account held at a bank or another financial institution that provides a modest interest rate.</p>
                   <a class="btn btn-default theme-btn btn-hover" href="#">Apply Now</a>
@@ -665,7 +673,7 @@
           </div>
           <div class="col-4 fw600">
               <div class="service-col">
-                  <i><img src="car.webp"></i>
+                  <i><img src="/images/car.webp"></i>
                   <h4><a href="#">Car Loan</a></h4>
                   <p>Get instant gold loan by bringing your gold jewellery at our branch. Your gold stays safe while you can go ahead and take advantage of every opportunity.</p>
                   <a class="btn btn-default theme-btn btn-hover" href="#">Apply Now</a>
@@ -674,7 +682,7 @@
           
           <div class="col-4 fw600">
               <div class="service-col">
-                  <i><img src="home.png"></i>
+                  <i><img src="/images/home.png"></i>
                   <h4><a href="#">Home Loan</a></h4>
                   <p>A Mortgage loan is a debt instrument. Mortgage loans are usually entered into by home buyers without enough cash on hand to purchase the home.</p>
                   <a class="btn btn-default theme-btn btn-hover" href="#">Apply Now</a>
@@ -682,7 +690,7 @@
           </div>
           <div class="col-4 fw600">
               <div class="service-col">
-                  <i><img src="personal.jpg"></i>
+                  <i><img src="/images/personal.jpg"></i>
                   <h4><a href="#">Personal Loan</a></h4>
                   <p>Fixed Deposit is available with various tenures which the members can choose as per their requirement with higher interest rates than savings accounts.</p>
                   <a class="btn btn-default theme-btn btn-hover" href="#">Apply Now</a>
@@ -690,7 +698,7 @@
           </div>
           <div class="col-4 fw600">
               <div class="service-col">
-                  <i><img src="business.avif"></i>
+                  <i><img src="/images/business.avif"></i>
                   <h4><a href="#">Business Loan</a></h4>
                   <p>A short term loans for business funding with benefits like daily collection facility, doorstep collection, fast disbursal from Niharika Nidhi Ltd.</p>
                   <a class="btn btn-default theme-btn btn-hover" href="#">Apply Now</a>
@@ -698,7 +706,7 @@
           </div>
           <div class="col-4 fw600">
               <div class="service-col">
-                  <i><img src="education.jpg"></i>
+                  <i><img src="/images/education.jpg"></i>
                   <h4><a href="#">Education Loan</a></h4>
                   <p>A basic saving plan, which helps you regulate your savings and reap its benefits from time to time. Also avail up to 95% of the deposit amount by way of loan.</p>
                   <a class="btn btn-default theme-btn btn-hover" href="#">Apply Now</a>
@@ -745,7 +753,7 @@
             <h2>CONTACT US</h2>
             <hr class="dotted-hr">
 
-            <form action="Main.php" method="post" enctype="text/plain">
+            <form action="" method="post" enctype="text/plain">
                 <p><input type="text" placeholder="Your Name" name="name"></p>
                 <p><input type="email" placeholder="Your Email" name="email"></p>
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>

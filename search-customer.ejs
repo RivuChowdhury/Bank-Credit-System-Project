@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    <link rel="stylesheet" type="text/css" href="/style/customerstyle.css">
+    <link rel="stylesheet" type="text/css" href="/style/desktop.css" >
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    
+ 
+    
+</head>
+<body>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.12/dist/nightowl.js"></script>
+
+    <h1>Customer Details:</h1>
+    
+    <table border="1" width="100%">
+        <tr>
+            <th>ID:</th>
+            <th>Name:</th>
+            <th>Account Balance</th>
+            <th>Email:</th>
+            <th>Mobile No.:</th>
+        </tr>
+        <% if(customer.length>0){ %>
+            <% for(var i=0;i<customer.length;i++){ %>
+                <tr>
+                    <td><%- customer[i].Customer_id %></td>
+                    <td><%- customer[i].Customer_name %></td>
+                    <td><%- customer[i].account_balance %></td>
+                    <td><%- customer[i].email %></td>
+                    <td><%- customer[i].mobile %></td>
+                </tr>
+
+            <% } %>
+
+        <% }else{ %> 
+
+        <% } %>
+    </table>
+
+    <h1>Loan Details:</h1>
+    
+    <table border="1" width="100%">
+        <tr>
+            <th>Customer ID:</th>
+            <th>Name:</th>
+            <th>Loan ID:</th>
+            <th>Loan type:</th>
+            <th>Principal amount:</th>
+            <th>Interest:</th>
+            <th>Time Period:</th>
+            <th>Total amount:</th>
+            <th>Email:</th>
+            <th>Mobile No.:</th>
+        </tr>
+        <% if(loans.length>0){ %>
+            <% for(var i=0;i<loans.length;i++){ %>
+                <tr>
+                    <td><%- loans[i].Customer_id %></td>
+                    <td><%- loans[i].Customer_name %></td>
+                    <td><%- loans[i].Loan_id %></td>
+                    <td><%- loans[i].loan_type %></td>
+                    <td><%- loans[i].Principal_mount %></td>
+                    <td><%- loans[i].Interest %></td>
+                    <td><%- loans[i].Time_period %></td>
+                    <td><%- loans[i].Total_amount %></td>
+                    <td><%- loans[i].email %></td>
+                    <td><%- loans[i].mobile %></td>
+                </tr>
+
+            <% } %>
+
+        <% }else{ %> 
+
+        <% } %>
+    </table>
+
+    <section class="service-two-area bg-shape">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                   
+                </div>
+            </div>
+            <div class="row">
+                <form class="col-4 fw600" action="/loan">
+                    <div class="service-col">
+                        <i> <img src="/images/gold.jpg"></i>
+                        <h4><a href="#">Gold Loan</a></h4>
+                        <p>Get instant gold loan by bringing your gold jewellery at our branch. Your gold stays safe while you can go ahead and take advantage of every opportunity.</p>
+                        <input type="submit" value="Apply for Gold loan">
+                    </div>
+                </form>
+                <form class="col-4 fw600" action="/loan">
+                    <div class="service-col">
+                        <i><img src="/images/car.webp"></i>
+                        <h4><a href="#">Car Loan</a></h4>
+                        <p>Get instant car loan by bringing your gold jewellery at our branch. Your car stays safe while you can go ahead and take advantage of every opportunity.</p>
+                        <input type="submit"  value="Apply for Car Loan loan">
+                    </div>
+                </form>
+                
+                <div class="col-4 fw600">
+                    <form class="service-col" action="/loan">
+                        <i><img src="/images/home.png"></i>
+                        <h4><a href="#">Home Loan</a></h4>
+                        <p>A Mortgage loan is a debt instrument. Mortgage loans are usually entered into by home buyers without enough cash on hand to purchase the home.</p>
+                        <input type="submit" value="Apply for Home loan">
+                    </form>
+                </div>
+                <div class="col-4 fw600">
+                    <form class="service-col" action="/loan">
+                        <i><img src="/images/personal.jpg"></i>
+                        <h4><a href="#">Personal Loan</a></h4>
+                        <p>Fixed Deposit is available with various tenures which the members can choose as per their requirement with higher interest rates than savings accounts.</p>
+                        <input type="submit" class="button" value="Apply for Personal loan">
+                    </form>
+                </div>
+                <div class="col-4 fw600">
+                    <form class="service-col" action="/loan">
+                        <i><img src="/images/business.avif"></i>
+                        <h4><a href="#">Business Loan</a></h4>
+                        <p>A short term loans for business funding with benefits like daily collection facility, doorstep collection, fast disbursal from Niharika Nidhi Ltd.</p>
+                        <input type="submit" value="Apply for Business loan">
+                    </form>
+                </div>
+                <div class="col-4 fw600">
+                    <form class="service-col" action="/loan">
+                        <i><img src="/images/education.jpg"></i>
+                        <h4><a href="#">Education Loan</a></h4>
+                        <p>A basic saving plan, which helps you regulate your savings and reap its benefits from time to time. Also avail up to 95% of the deposit amount by way of loan.</p>
+                        <input type="submit" value="Apply for Education loan">
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+    
+</body>
+</html>
