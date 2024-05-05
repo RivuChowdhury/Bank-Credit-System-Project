@@ -10,7 +10,7 @@ router.get('/',(req,res)=>{
 
 router.post('/',handleUserSignUp);
 
-router.get('/search',handleUserLogin);
+router.post('/search',handleUserLogin);
 
 router.get('/loan',(req,res)=>{
     res.sendFile(path.join(__dirname,'../views/loanform.html'));

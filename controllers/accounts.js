@@ -21,8 +21,8 @@ function handleUserSignUp(req,res){
 }
 
 function handleUserLogin(req,res){
-    var name = req.query.logname;
-    var pass = req.query.logpsw;
+    var name = req.body.logname;
+    var pass = req.body.logpsw;
     var sql1 = "SELECT * FROM bank WHERE Customer_name LIKE '%" + name + "%' AND passkey LIKE '%" + pass + "%'";
     var sql2 = "SELECT bank.Customer_id, bank.Customer_name, loans.Loan_id, loans.loan_type, loans.Principal_mount, loans.Interest, loans.Time_period, loans.Total_amount, bank.email, bank.mobile FROM bank RIGHT JOIN loans ON bank.customer_id = loans.customer_id WHERE loans.Customer_name LIKE '%" + name + "%';"
     con.query(sql1, (err, result1) => {
